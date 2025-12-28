@@ -591,4 +591,40 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
     });
+    
+    // FAQ Accordion Functionality
+    const faqQuestions = document.querySelectorAll('.faq-question');
+    
+    faqQuestions.forEach(question => {
+        question.addEventListener('click', function() {
+            const faqItem = this.closest('.faq-item');
+            const isExpanded = faqItem.getAttribute('aria-expanded') === 'true';
+            const answer = faqItem.querySelector('.faq-answer');
+            
+            // Close all other FAQ items
+            document.querySelectorAll('.faq-item').forEach(item => {
+                if (item !== faqItem) {
+                    item.setAttribute('aria-expanded', 'false');
+                    item.querySelector('.faq-answer').style.maxHeight = '0';
+                }
+            });
+            
+            // Toggle current FAQ item
+            if (isExpanded) {
+                faqItem.setAttribute('aria-expanded', 'false');
+                answer.style.maxHeight = '0';
+            } else {
+                faqItem.setAttribute('aria-expanded', 'true');
+                answer.style.maxHeight = answer.scrollHeight + 'px';
+            }
+        });
+        
+        // Keyboard navigation for FAQ
+        question.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                this.click();
+            }
+        });
+    });
 });

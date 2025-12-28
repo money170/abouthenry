@@ -39,6 +39,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+    <!-- Skip to Main Content Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
     <!-- Loading Screen -->
     <div id="loading-screen">
         <div class="loader">
@@ -58,6 +61,9 @@
                 <li role="none"><a href="#about" class="nav-link" role="menuitem">About</a></li>
                 <li role="none"><a href="#skills" class="nav-link" role="menuitem">Skills</a></li>
                 <li role="none"><a href="#services" class="nav-link" role="menuitem">Services</a></li>
+                <li role="none"><a href="#useful-projects" class="nav-link" role="menuitem">Projects</a></li>
+                <li role="none"><a href="#case-studies" class="nav-link" role="menuitem">Case Studies</a></li>
+                <li role="none"><a href="#faq" class="nav-link" role="menuitem">FAQ</a></li>
                 <li role="none"><a href="#contact" class="nav-link" role="menuitem">Contact</a></li>
             </ul>
             <button class="theme-toggle" aria-label="Toggle dark mode" aria-pressed="false">
@@ -132,6 +138,8 @@
         </div>
     </section>
 
+    <!-- Main Content -->
+    <main id="main-content">
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
@@ -451,8 +459,9 @@
                         </a>
                     </div>
                     
-                    <div class="social-links
-                            </a>
+                    <div class="social-links">
+                        <h3>Connect With Me</h3>
+                        <div class="social-icons">
                             <a href="https://github.com/money170" class="social-icon" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
                                 <i class="fab fa-github"></i>
                             </a>
@@ -484,6 +493,213 @@
                         <i class="fas fa-paper-plane" aria-hidden="true"></i>
                     </button>
                 </form>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <!-- Case Studies Section -->
+    <section id="case-studies" class="case-studies">
+        <div class="container">
+            <h2 class="section-title">Case Studies</h2>
+            <p class="section-subtitle">Detailed breakdowns of successful projects and solutions</p>
+            <div class="case-studies-grid">
+                <article class="case-study-card">
+                    <div class="case-study-header">
+                        <div class="case-study-icon">
+                            <i class="fas fa-coffee"></i>
+                        </div>
+                        <h3>Brew & Bean Coffee Shop</h3>
+                        <span class="case-study-category">Business Website</span>
+                    </div>
+                    <div class="case-study-content">
+                        <h4>Challenge</h4>
+                        <p>A local café needed an online presence to showcase their menu, services, and location. They wanted something simple, mobile-friendly, and easy to maintain.</p>
+                        <h4>Solution</h4>
+                        <p>Created a 4-page responsive website featuring a services page, menu highlights, about section, and contact form with business hours and location map integration.</p>
+                        <h4>Results</h4>
+                        <ul>
+                            <li>Mobile-optimized design increased mobile traffic engagement</li>
+                            <li>Contact form integration improved customer inquiries</li>
+                            <li>Clean, professional layout enhanced brand perception</li>
+                        </ul>
+                        <div class="case-study-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Responsive Design</span>
+                        </div>
+                        <div class="case-study-links">
+                            <a href="https://brew-and-bean-sample.netlify.app/" target="_blank" rel="noopener noreferrer" class="case-study-link">
+                                <i class="fas fa-external-link-alt"></i> View Live Site
+                            </a>
+                            <a href="https://github.com/money170/Brew-and-Bean-sample" target="_blank" rel="noopener noreferrer" class="case-study-link">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="case-study-card">
+                    <div class="case-study-header">
+                        <div class="case-study-icon">
+                            <i class="fas fa-paw"></i>
+                        </div>
+                        <h3>Pawsome Grooming</h3>
+                        <span class="case-study-category">Pet Business</span>
+                    </div>
+                    <div class="case-study-content">
+                        <h4>Challenge</h4>
+                        <p>A pet grooming business required a professional website to build trust with pet owners and showcase their services, pricing, and customer testimonials.</p>
+                        <h4>Solution</h4>
+                        <p>Developed a comprehensive 4-page website with detailed service descriptions, customer testimonials section, pricing information, and easy-to-use contact form with business hours display.</p>
+                        <h4>Results</h4>
+                        <ul>
+                            <li>Professional design increased booking inquiries</li>
+                            <li>Testimonials section built customer trust</li>
+                            <li>Clear service descriptions improved user understanding</li>
+                        </ul>
+                        <div class="case-study-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Mobile First</span>
+                        </div>
+                        <div class="case-study-links">
+                            <a href="https://pawsome-grooming-sample.netlify.app" target="_blank" rel="noopener noreferrer" class="case-study-link">
+                                <i class="fas fa-external-link-alt"></i> View Live Site
+                            </a>
+                            <a href="https://github.com/money170/Pawsome-Grooming-sample" target="_blank" rel="noopener noreferrer" class="case-study-link">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="case-study-card">
+                    <div class="case-study-header">
+                        <div class="case-study-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Bright Minds Tutoring</h3>
+                        <span class="case-study-category">Education</span>
+                    </div>
+                    <div class="case-study-content">
+                        <h4>Challenge</h4>
+                        <p>A tutoring service needed a modern website to attract students and parents, highlighting their teaching approach, subjects offered, and success stories.</p>
+                        <h4>Solution</h4>
+                        <p>Built a clean, education-focused website with subject highlights, tutor profiles, testimonials, and an intuitive contact form. Designed with a friendly, approachable aesthetic to appeal to families.</p>
+                        <h4>Results</h4>
+                        <ul>
+                            <li>Modern design attracted younger demographic</li>
+                            <li>Clear subject information improved inquiry quality</li>
+                            <li>User-friendly layout increased form submissions</li>
+                        </ul>
+                        <div class="case-study-tech">
+                            <span class="tech-tag">HTML5</span>
+                            <span class="tech-tag">CSS3</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Modern UI/UX</span>
+                        </div>
+                        <div class="case-study-links">
+                            <a href="https://bright-minds-tutoring-sample.netlify.app/" target="_blank" rel="noopener noreferrer" class="case-study-link">
+                                <i class="fas fa-external-link-alt"></i> View Live Site
+                            </a>
+                            <a href="https://github.com/money170/Bright-Minds-Tutoring-Sample" target="_blank" rel="noopener noreferrer" class="case-study-link">
+                                <i class="fab fa-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <p class="section-subtitle">Common questions about my services and process</p>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-1" id="faq-question-1">
+                        <span>How long does it take to build a website?</span>
+                        <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                    </button>
+                    <div class="faq-answer" id="faq-answer-1" role="region" aria-labelledby="faq-question-1">
+                        <p>The timeline depends on the package you choose. A Starter Package typically takes 3-5 business days, Standard Package takes 5-7 business days, and Premium Package takes 7-10 business days. These timelines include revisions and feedback rounds.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-2" id="faq-question-2">
+                        <span>Do I need to provide content for my website?</span>
+                        <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                    </button>
+                    <div class="faq-answer" id="faq-answer-2" role="region" aria-labelledby="faq-question-2">
+                        <p>Yes, providing your content helps create a more personalized website. However, I can help with content suggestions and basic copywriting. For images, you can provide your own photos, or I can help you find appropriate stock images.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-3" id="faq-question-3">
+                        <span>Will my website be mobile-friendly?</span>
+                        <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                    </button>
+                    <div class="faq-answer" id="faq-answer-3" role="region" aria-labelledby="faq-question-3">
+                        <p>Absolutely! All websites I create are fully responsive and mobile-friendly. They will look great and function perfectly on smartphones, tablets, and desktop computers.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-4" id="faq-question-4">
+                        <span>Can I update my website myself after it's built?</span>
+                        <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                    </button>
+                    <div class="faq-answer" id="faq-answer-4" role="region" aria-labelledby="faq-question-4">
+                        <p>Yes! With the Premium Package, I provide training on how to edit your own site. For all packages, I can make updates for you, or you can learn to do it yourself. The code is clean and well-documented to make future edits easier.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-5" id="faq-question-5">
+                        <span>What's included in the custom business email setup?</span>
+                        <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                    </button>
+                    <div class="faq-answer" id="faq-answer-5" role="region" aria-labelledby="faq-question-5">
+                        <p>I'll help you set up a professional email address using your domain (e.g., contact@yourbusiness.com). This includes email account creation and basic configuration. You'll need to choose an email hosting provider (many offer free or low-cost options).</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-6" id="faq-question-6">
+                        <span>Do you provide hosting for the website?</span>
+                        <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                    </button>
+                    <div class="faq-answer" id="faq-answer-6" role="region" aria-labelledby="faq-question-6">
+                        <p>I can help you choose a hosting provider and guide you through the setup process. Hosting is typically a separate monthly or annual cost (usually $3-10/month for basic hosting). I can recommend reliable and affordable hosting options.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-7" id="faq-question-7">
+                        <span>What if I need changes after the website is complete?</span>
+                        <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                    </button>
+                    <div class="faq-answer" id="faq-answer-7" role="region" aria-labelledby="faq-question-7">
+                        <p>I offer ongoing support and updates. Small changes can often be done quickly, while larger updates may require additional time and cost. I'm always happy to help maintain and improve your website as your business grows.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-8" id="faq-question-8">
+                        <span>How do I get started?</span>
+                        <i class="fas fa-chevron-down" aria-hidden="true"></i>
+                    </button>
+                    <div class="faq-answer" id="faq-answer-8" role="region" aria-labelledby="faq-question-8">
+                        <p>Simply fill out the contact form below or email me directly at henry.s.meves@gmail.com. Let me know which package interests you and a bit about your project. I'll respond within 24 hours to discuss your needs and answer any questions.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
