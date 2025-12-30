@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Henry Meves - Young Website Developer | Portfolio</title>
+    <meta name="lang" content="en">
     
     <!-- SEO Meta Tags -->
     <meta name="description" content="Henry Meves is a passionate young website developer specializing in modern web development. View my portfolio of responsive websites and web applications.">
@@ -66,9 +67,25 @@
                 <li role="none"><a href="#faq" class="nav-link" role="menuitem">FAQ</a></li>
                 <li role="none"><a href="#contact" class="nav-link" role="menuitem">Contact</a></li>
             </ul>
+            <div class="header-controls">
+                <button class="language-toggle" aria-label="Change language" aria-expanded="false" id="language-toggle">
+                    <i class="fas fa-globe" aria-hidden="true"></i>
+                    <span class="current-lang">EN</span>
+                </button>
+                <div class="language-menu" id="language-menu" role="menu" aria-labelledby="language-toggle">
+                    <button class="language-option" data-lang="en" role="menuitem" aria-label="English">
+                        <span>English</span>
+                        <span class="lang-code">EN</span>
+                    </button>
+                    <button class="language-option" data-lang="es" role="menuitem" aria-label="Español">
+                        <span>Español</span>
+                        <span class="lang-code">ES</span>
+                    </button>
+                </div>
             <button class="theme-toggle" aria-label="Toggle dark mode" aria-pressed="false">
                 <i class="fas fa-moon" aria-hidden="true"></i>
             </button>
+            </div>
             <button class="hamburger" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="nav-menu">
                 <span></span>
                 <span></span>
@@ -188,23 +205,23 @@
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
+            <h2 class="section-title" data-translate="aboutMe">About Me</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>Hello! I'm Henry, a young website developer with a passion for creating digital experiences that are both beautiful and functional. I started my coding journey at a young age and have been fascinated by the endless possibilities of web development ever since.</p>
-                    <p>I believe in writing clean, efficient code and creating user-friendly websites that solve real problems. My approach combines technical skills with creative thinking to deliver solutions that exceed expectations.</p>
+                    <p data-translate="aboutText1">Hello! I'm Henry, a young website developer with a passion for creating digital experiences that are both beautiful and functional. I started my coding journey at a young age and have been fascinated by the endless possibilities of web development ever since.</p>
+                    <p data-translate="aboutText2">I believe in writing clean, efficient code and creating user-friendly websites that solve real problems. My approach combines technical skills with creative thinking to deliver solutions that exceed expectations.</p>
                     <div class="about-stats">
                         <div class="stat">
                             <h3>15+</h3>
-                            <p>Projects Completed</p>
+                            <p data-translate="projectsCompleted">Projects Completed</p>
                         </div>
                         <div class="stat">
                             <h3 id="experience-counter"></h3>
-                            <p id="experience-text">Months Experience</p>
+                            <p id="experience-text" data-translate="monthsExperience">Months Experience</p>
                         </div>
                         <div class="stat">
                             <h3>100%</h3>
-                            <p>Client Satisfaction</p>
+                            <p data-translate="clientSatisfaction">Client Satisfaction</p>
                         </div>
                     </div>
                 </div>
@@ -218,7 +235,7 @@
     <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="container"> 
-            <h2 class="section-title">Skills & Technologies</h2>
+            <h2 class="section-title" data-translate="skillsTechnologies">Skills & Technologies</h2>
             <div class="skills-grid">
                 <div class="skill-category">
                     <h3>Frontend Development</h3>
@@ -294,8 +311,8 @@
     <!-- Services Section -->
     <section id="services" class="services">
         <div class="container">
-            <h2 class="section-title">Services Offered</h2>
-            <p class="section-subtitle">Professional website solutions for your business needs</p>
+            <h2 class="section-title" data-translate="servicesOffered">Services Offered</h2>
+            <p class="section-subtitle" data-translate="servicesSubtitle">Professional website solutions for your business needs</p>
             <div class="services-grid">
                 <!-- Starter Package -->
                 <div class="service-card starter">
@@ -303,24 +320,24 @@
                         <div class="service-icon">
                             <i class="fas fa-rocket"></i>
                         </div>
-                        <h3>Starter Package</h3>
+                        <h3 data-translate="starterPackage">Starter Package</h3>
                         <div class="service-price">
                             <span class="price-amount">$7</span>
-                            <span class="price-period">one-time</span>
+                            <span class="price-period" data-translate="oneTime">one-time</span>
                         </div>
                     </div>
                     <div class="service-description">
-                        <p>Perfect for small businesses getting started online</p>
+                        <p data-translate="starterDescription">Perfect for small businesses getting started online</p>
                     </div>
                     <div class="service-features">
-                        <h4>What's Included:</h4>
+                        <h4 data-translate="whatsIncluded">What's Included:</h4>
                         <ul>
-                            <li><i class="fas fa-check"></i>3-5 page mobile-friendly website</li>
-                            <li><i class="fas fa-check"></i>Custom colors + simple layout</li>
-                            <li><i class="fas fa-check"></i>Footer with business info + NextGen Sites signature</li>
-                            <li><i class="fas fa-check"></i>Setup with Google Business Profile</li>
-                            <li><i class="fas fa-check"></i>Free custom business email setup</li>
-                            <li><i class="fas fa-check"></i>Social media links integration</li>
+                            <li><i class="fas fa-check"></i><span data-translate="starterFeature1">3-5 page mobile-friendly website</span></li>
+                            <li><i class="fas fa-check"></i><span data-translate="starterFeature2">Custom colors + simple layout</span></li>
+                            <li><i class="fas fa-check"></i><span data-translate="starterFeature3">Footer with business info + NextGen Sites signature</span></li>
+                            <li><i class="fas fa-check"></i><span data-translate="starterFeature4">Setup with Google Business Profile</span></li>
+                            <li><i class="fas fa-check"></i><span data-translate="starterFeature5">Free custom business email setup</span></li>
+                            <li><i class="fas fa-check"></i><span data-translate="starterFeature6">Social media links integration</span></li>
                         </ul>
                     </div>
                     <div class="service-cta">
@@ -330,29 +347,29 @@
 
                 <!-- Standard Package -->
                 <div class="service-card standard featured">
-                    <div class="service-badge">Most Popular</div>
+                    <div class="service-badge" data-translate="mostPopular">Most Popular</div>
                     <div class="service-header">
                         <div class="service-icon">
                             <i class="fas fa-star"></i>
                         </div>
-                        <h3>Standard Package</h3>
+                        <h3 data-translate="standardPackage">Standard Package</h3>
                         <div class="service-price">
                             <span class="price-amount">$25</span>
-                            <span class="price-period">one-time</span>
+                            <span class="price-period" data-translate="oneTime">one-time</span>
                         </div>
                     </div>
                     <div class="service-description">
-                        <p>Complete website solution with modern design and functionality</p>
+                        <p data-translate="standardDescription">Complete website solution with modern design and functionality</p>
                     </div>
                     <div class="service-features">
-                        <h4>Everything in Starter, Plus:</h4>
+                        <h4 data-translate="everythingInStarterPlus">Everything in Starter, Plus:</h4>
                         <ul>
-                            <li><i class="fas fa-check"></i>5-8 page website</li>
-                            <li><i class="fas fa-check"></i>Modern design with icons/images</li>
-                            <li><i class="fas fa-check"></i>Contact form</li>
-                            <li><i class="fas fa-check"></i>Free custom business email setup</li>
-                            <li><i class="fas fa-check"></i>Enhanced mobile optimization</li>
-                            <li><i class="fas fa-check"></i>Basic analytics setup</li>
+                            <li><i class="fas fa-check"></i><span data-translate="standardFeature1">5-8 page website</span></li>
+                            <li><i class="fas fa-check"></i><span data-translate="standardFeature2">Modern design with icons/images</span></li>
+                            <li><i class="fas fa-check"></i><span data-translate="standardFeature3">Contact form</span></li>
+                            <li><i class="fas fa-check"></i><span data-translate="standardFeature4">Free custom business email setup</span></li>
+                            <li><i class="fas fa-check"></i><span data-translate="standardFeature5">Enhanced mobile optimization</span></li>
+                            <li><i class="fas fa-check"></i><span data-translate="standardFeature6">Basic analytics setup</span></li>
                         </ul>
                     </div>
                     <div class="service-cta">
@@ -366,24 +383,24 @@
                         <div class="service-icon">
                             <i class="fas fa-crown"></i>
                         </div>
-                        <h3>Premium Package</h3>
+                        <h3 data-translate="premiumPackage">Premium Package</h3>
                         <div class="service-price">
                             <span class="price-amount">$65</span>
-                            <span class="price-period">one-time</span>
+                            <span class="price-period" data-translate="oneTime">one-time</span>
                         </div>
                     </div>
                     <div class="service-description">
-                        <p>Advanced website with premium features and priority support</p>
+                        <p data-translate="premiumDescription">Advanced website with premium features and priority support</p>
                     </div>
                     <div class="service-features">
-                        <h4>Everything in Standard, Plus:</h4>
+                        <h4 data-translate="everythingInStandardPlus">Everything in Standard, Plus:</h4>
                         <ul>
-                            <li><i class="fas fa-check"></i>8+ pages with advanced features</li>
-                            <li><i class="fas fa-check"></i>Blog or booking integration</li>
-                            <li><i class="fas fa-check"></i>SEO basics (title tags, descriptions)</li>
-                            <li><i class="fas fa-check"></i>Light branding (logo, banner, favicon)</li>
-                            <li><i class="fas fa-check"></i>Priority support + training</li>
-                            <li><i class="fas fa-check"></i>How to edit your own site</li>
+                            <li><i class="fas fa-check"></i><span data-translate="premiumFeature1">8+ pages with advanced features</span></li>
+                            <li><i class="fas fa-check"></i><span data-translate="premiumFeature2">Blog or booking integration</span></li>
+                            <li><i class="fas fa-check"></i><span data-translate="premiumFeature3">SEO basics (title tags, descriptions)</span></li>
+                            <li><i class="fas fa-check"></i><span data-translate="premiumFeature4">Light branding (logo, banner, favicon)</span></li>
+                            <li><i class="fas fa-check"></i><span data-translate="premiumFeature5">Priority support + training</span></li>
+                            <li><i class="fas fa-check"></i><span data-translate="premiumFeature6">How to edit your own site</span></li>
                         </ul>
                     </div>
                     <div class="service-cta">
@@ -397,8 +414,8 @@
     <!-- Useful Projects Section -->
     <section id="useful-projects" class="useful-projects">
         <div class="container">
-            <h2 class="section-title">Useful Projects You Can Use</h2>
-            <p class="section-subtitle">Check out these free web applications I've built that you can use right now</p>
+            <h2 class="section-title" data-translate="usefulProjects">Useful Projects You Can Use</h2>
+            <p class="section-subtitle" data-translate="usefulProjectsSubtitle">Check out these free web applications I've built that you can use right now</p>
             <div class="useful-projects-content">
                 <div class="useful-projects-description">
                     <p>I've created several practical web applications that are available for anyone to use. These tools are free, functional, and designed to help with everyday tasks.</p>
@@ -408,14 +425,14 @@
                             <div>
                                 <h4>URL Shortener</h4>
                                 <p>Free URL shortening tool with local storage and click tracking</p>
-                            </div>
+                </div>
                         </div>
                         <div class="project-item">
                             <i class="fas fa-images"></i>
                             <div>
                                 <h4>Slides Show</h4>
                                 <p>Interactive slideshow application for dynamic presentations</p>
-                            </div>
+                </div>
                         </div>
                         <div class="project-item">
                             <i class="fas fa-camera"></i>
@@ -443,11 +460,57 @@
         </div>
     </section>
 
+    <!-- Performance Metrics Section -->
+    <section id="performance" class="performance-metrics">
+        <div class="container">
+            <h2 class="section-title" data-translate="performanceOptimization">Performance & Optimization</h2>
+            <p class="section-subtitle" data-translate="performanceSubtitle">This website is built with performance and user experience in mind</p>
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <div class="metric-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                        </div>
+                    <div class="metric-value" id="load-time">0</div>
+                    <div class="metric-label" data-translate="msLoadTime">ms Load Time</div>
+                    <div class="metric-description" data-translate="fastPageLoad">Fast page load for better user experience</div>
+                            </div>
+                <div class="metric-card">
+                    <div class="metric-icon">
+                        <i class="fas fa-file-code"></i>
+                    </div>
+                    <div class="metric-value" id="page-size">0</div>
+                    <div class="metric-label" data-translate="kbPageSize">KB Page Size</div>
+                    <div class="metric-description" data-translate="optimizedAssets">Optimized assets for quick loading</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="metric-value" id="mobile-score">0</div>
+                    <div class="metric-label" data-translate="mobileScore">Mobile Score</div>
+                    <div class="metric-description" data-translate="fullyResponsive">Fully responsive and mobile-optimized</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="metric-value" id="seo-score">0</div>
+                    <div class="metric-label" data-translate="seoScore">SEO Score</div>
+                    <div class="metric-description" data-translate="optimizedForSEO">Optimized for search engines</div>
+                </div>
+            </div>
+            <div class="performance-note">
+                <i class="fas fa-info-circle"></i>
+                <p data-translate="performanceNote">These metrics are calculated based on current page performance. Actual values may vary based on network conditions and device capabilities.</p>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">Get in Touch</h2>
-            <p class="section-subtitle">Have a project in mind? Let's build your website together.</p>
+            <h2 class="section-title" data-translate="getInTouch">Get in Touch</h2>
+            <p class="section-subtitle" data-translate="contactSubtitle">Have a project in mind? Let's build your website together.</p>
             
             <div class="contact-content">
                 <div class="contact-info">
@@ -501,8 +564,8 @@
     <!-- Case Studies Section -->
     <section id="case-studies" class="case-studies">
         <div class="container">
-            <h2 class="section-title">Case Studies</h2>
-            <p class="section-subtitle">Detailed breakdowns of successful projects and solutions</p>
+            <h2 class="section-title" data-translate="caseStudies">Case Studies</h2>
+            <p class="section-subtitle" data-translate="caseStudiesSubtitle">Detailed breakdowns of successful projects and solutions</p>
             <div class="case-studies-grid">
                 <article class="case-study-card">
                     <div class="case-study-header">
@@ -618,86 +681,86 @@
     <!-- FAQ Section -->
     <section id="faq" class="faq">
         <div class="container">
-            <h2 class="section-title">Frequently Asked Questions</h2>
-            <p class="section-subtitle">Common questions about my services and process</p>
+            <h2 class="section-title" data-translate="faqTitle">Frequently Asked Questions</h2>
+            <p class="section-subtitle" data-translate="faqSubtitle">Common questions about my services and process</p>
             <div class="faq-container">
                 <div class="faq-item">
                     <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-1" id="faq-question-1">
-                        <span>How long does it take to build a website?</span>
+                        <span data-translate="faqQ1">How long does it take to build a website?</span>
                         <i class="fas fa-chevron-down" aria-hidden="true"></i>
                     </button>
                     <div class="faq-answer" id="faq-answer-1" role="region" aria-labelledby="faq-question-1">
-                        <p>The timeline depends on the package you choose. A Starter Package typically takes 3-5 business days, Standard Package takes 5-7 business days, and Premium Package takes 7-10 business days. These timelines include revisions and feedback rounds.</p>
+                        <p data-translate="faqA1">The timeline depends on the package you choose. A Starter Package typically takes 3-5 business days, Standard Package takes 5-7 business days, and Premium Package takes 7-10 business days. These timelines include revisions and feedback rounds.</p>
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-2" id="faq-question-2">
-                        <span>Do I need to provide content for my website?</span>
+                        <span data-translate="faqQ2">Do I need to provide content for my website?</span>
                         <i class="fas fa-chevron-down" aria-hidden="true"></i>
                     </button>
                     <div class="faq-answer" id="faq-answer-2" role="region" aria-labelledby="faq-question-2">
-                        <p>Yes, providing your content helps create a more personalized website. However, I can help with content suggestions and basic copywriting. For images, you can provide your own photos, or I can help you find appropriate stock images.</p>
+                        <p data-translate="faqA2">Yes, providing your content helps create a more personalized website. However, I can help with content suggestions and basic copywriting. For images, you can provide your own photos, or I can help you find appropriate stock images.</p>
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-3" id="faq-question-3">
-                        <span>Will my website be mobile-friendly?</span>
+                        <span data-translate="faqQ3">Will my website be mobile-friendly?</span>
                         <i class="fas fa-chevron-down" aria-hidden="true"></i>
                     </button>
                     <div class="faq-answer" id="faq-answer-3" role="region" aria-labelledby="faq-question-3">
-                        <p>Absolutely! All websites I create are fully responsive and mobile-friendly. They will look great and function perfectly on smartphones, tablets, and desktop computers.</p>
+                        <p data-translate="faqA3">Absolutely! All websites I create are fully responsive and mobile-friendly. They will look great and function perfectly on smartphones, tablets, and desktop computers.</p>
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-4" id="faq-question-4">
-                        <span>Can I update my website myself after it's built?</span>
+                        <span data-translate="faqQ4">Can I update my website myself after it's built?</span>
                         <i class="fas fa-chevron-down" aria-hidden="true"></i>
                     </button>
                     <div class="faq-answer" id="faq-answer-4" role="region" aria-labelledby="faq-question-4">
-                        <p>Yes! With the Premium Package, I provide training on how to edit your own site. For all packages, I can make updates for you, or you can learn to do it yourself. The code is clean and well-documented to make future edits easier.</p>
+                        <p data-translate="faqA4">Yes! With the Premium Package, I provide training on how to edit your own site. For all packages, I can make updates for you, or you can learn to do it yourself. The code is clean and well-documented to make future edits easier.</p>
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-5" id="faq-question-5">
-                        <span>What's included in the custom business email setup?</span>
+                        <span data-translate="faqQ5">What's included in the custom business email setup?</span>
                         <i class="fas fa-chevron-down" aria-hidden="true"></i>
                     </button>
                     <div class="faq-answer" id="faq-answer-5" role="region" aria-labelledby="faq-question-5">
-                        <p>I'll help you set up a professional email address using your domain (e.g., contact@yourbusiness.com). This includes email account creation and basic configuration. You'll need to choose an email hosting provider (many offer free or low-cost options).</p>
+                        <p data-translate="faqA5">I'll help you set up a professional email address using your domain (e.g., contact@yourbusiness.com). This includes email account creation and basic configuration. You'll need to choose an email hosting provider (many offer free or low-cost options).</p>
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-6" id="faq-question-6">
-                        <span>Do you provide hosting for the website?</span>
+                        <span data-translate="faqQ6">Do you provide hosting for the website?</span>
                         <i class="fas fa-chevron-down" aria-hidden="true"></i>
                     </button>
                     <div class="faq-answer" id="faq-answer-6" role="region" aria-labelledby="faq-question-6">
-                        <p>I can help you choose a hosting provider and guide you through the setup process. Hosting is typically a separate monthly or annual cost (usually $3-10/month for basic hosting). I can recommend reliable and affordable hosting options.</p>
+                        <p data-translate="faqA6">I can help you choose a hosting provider and guide you through the setup process. Hosting is typically a separate monthly or annual cost (usually $3-10/month for basic hosting). I can recommend reliable and affordable hosting options.</p>
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-7" id="faq-question-7">
-                        <span>What if I need changes after the website is complete?</span>
+                        <span data-translate="faqQ7">What if I need changes after the website is complete?</span>
                         <i class="fas fa-chevron-down" aria-hidden="true"></i>
                     </button>
                     <div class="faq-answer" id="faq-answer-7" role="region" aria-labelledby="faq-question-7">
-                        <p>I offer ongoing support and updates. Small changes can often be done quickly, while larger updates may require additional time and cost. I'm always happy to help maintain and improve your website as your business grows.</p>
+                        <p data-translate="faqA7">I offer ongoing support and updates. Small changes can often be done quickly, while larger updates may require additional time and cost. I'm always happy to help maintain and improve your website as your business grows.</p>
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-8" id="faq-question-8">
-                        <span>How do I get started?</span>
+                        <span data-translate="faqQ8">How do I get started?</span>
                         <i class="fas fa-chevron-down" aria-hidden="true"></i>
                     </button>
                     <div class="faq-answer" id="faq-answer-8" role="region" aria-labelledby="faq-question-8">
-                        <p>Simply fill out the contact form below or email me directly at henry.s.meves@gmail.com. Let me know which package interests you and a bit about your project. I'll respond within 24 hours to discuss your needs and answer any questions.</p>
+                        <p data-translate="faqA8">Simply fill out the contact form below or email me directly at henry.s.meves@gmail.com. Let me know which package interests you and a bit about your project. I'll respond as soon as I can to discuss your needs and answer any questions.</p>
                     </div>
                 </div>
             </div>
@@ -721,6 +784,55 @@
     <button id="back-to-top" class="back-to-top" aria-label="Back to top">
         <i class="fas fa-chevron-up" aria-hidden="true"></i>
     </button>
+
+    <!-- Quick Contact Floating Button -->
+    <button id="quick-contact" class="quick-contact-btn" aria-label="Quick contact" title="Quick Contact">
+        <i class="fas fa-comments" aria-hidden="true"></i>
+        <span class="quick-contact-text">Contact</span>
+    </button>
+    <div id="quick-contact-panel" class="quick-contact-panel" aria-hidden="true">
+        <div class="quick-contact-header">
+            <h3>Quick Contact</h3>
+            <button class="quick-contact-close" aria-label="Close quick contact">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="quick-contact-content">
+            <a href="mailto:henry.s.meves@gmail.com" class="quick-contact-option">
+                <i class="fas fa-envelope"></i>
+                <span>Email Me</span>
+            </a>
+            <a href="#contact" class="quick-contact-option">
+                <i class="fas fa-paper-plane"></i>
+                <span>Send Message</span>
+            </a>
+            <a href="https://github.com/money170" target="_blank" rel="noopener noreferrer" class="quick-contact-option">
+                <i class="fab fa-github"></i>
+                <span>GitHub</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookie-consent" class="cookie-consent" role="dialog" aria-labelledby="cookie-consent-title" aria-hidden="true">
+        <div class="cookie-consent-content">
+            <div class="cookie-consent-text">
+                <i class="fas fa-cookie-bite"></i>
+                <div>
+                    <h3 id="cookie-consent-title">Cookie Consent</h3>
+                    <p>We use cookies to enhance your browsing experience and analyze site traffic. By clicking "Accept", you consent to our use of cookies.</p>
+                </div>
+            </div>
+            <div class="cookie-consent-buttons">
+                <button id="accept-cookies" class="btn btn-primary cookie-btn">
+                    Accept
+                </button>
+                <button id="decline-cookies" class="btn btn-secondary cookie-btn">
+                    Decline
+                </button>
+            </div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
