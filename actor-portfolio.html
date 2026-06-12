@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Your Name] — Actor Portfolio Template</title>
+    <link rel="stylesheet" href="template-base.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --brand-color: #1a1a2e;
+            --accent-color: #c9a227;
+            --font-heading: 'Georgia', serif;
+        }
+
+        .actor-hero {
+            text-align: center;
+            padding: 3rem 0 2rem;
+        }
+
+        .actor-hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .actor-hero .union-line,
+        .actor-hero .markets-line {
+            font-size: 0.95rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: #4B5563;
+            margin-bottom: 0.35rem;
+        }
+
+        .actor-hero .headshot-main {
+            max-width: 280px;
+            margin: 1.5rem auto 0;
+            min-height: 360px;
+        }
+
+        .bio-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            align-items: start;
+        }
+
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 1rem;
+        }
+
+        .photo-grid .placeholder-image {
+            min-height: 180px;
+            aspect-ratio: 3 / 4;
+        }
+
+        .gallery-grid .placeholder-image {
+            min-height: 160px;
+            aspect-ratio: 4 / 3;
+        }
+
+        .resume-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .resume-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+
+        .resume-links a {
+            color: var(--accent-color);
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .media-embed {
+            max-width: 720px;
+            margin: 0 auto;
+            min-height: 320px;
+        }
+
+        .rep-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 1.25rem;
+            margin: 1.5rem 0;
+        }
+
+        .rep-card {
+            background: #fff;
+            border: 1px solid #E5E7EB;
+            border-radius: 8px;
+            padding: 1.25rem;
+        }
+
+        .rep-card h4 {
+            color: var(--brand-color);
+            margin-bottom: 0.35rem;
+            font-family: var(--font-heading);
+        }
+
+        .rep-card p {
+            font-size: 0.9rem;
+            color: #4B5563;
+            margin-bottom: 0.25rem;
+        }
+
+        .newsletter-signup {
+            display: flex;
+            gap: 0.5rem;
+            max-width: 420px;
+            margin: 1.5rem auto 0;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .newsletter-signup input {
+            flex: 1;
+            min-width: 200px;
+            padding: 0.65rem 0.75rem;
+            border: 1px solid #D1D5DB;
+            border-radius: 6px;
+            font-family: inherit;
+        }
+
+        .newsletter-signup button {
+            padding: 0.65rem 1.25rem;
+            background: var(--accent-color);
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        @media (max-width: 600px) {
+            .bio-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .actor-hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="site-logo placeholder">[Your Name]</div>
+            <nav>
+                <ul class="site-nav">
+                    <li><a href="#bio">Bio</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#media">Media</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="actor-hero">
+        <div class="container">
+            <h1 class="placeholder">[Your Name]</h1>
+            <p class="union-line placeholder">[Union Affiliations — e.g. SAG-AFTRA / AEA]</p>
+            <p class="markets-line placeholder">[Your Markets — e.g. NYC / LA / Chicago]</p>
+            <div class="placeholder-image headshot-main">Your headshot here</div>
+        </div>
+    </section>
+
+    <section id="bio" class="section">
+        <div class="container">
+            <h2>Meet <span class="placeholder">[Your Name]</span></h2>
+            <div class="bio-grid">
+                <div>
+                    <p class="placeholder" style="margin-bottom:1rem;">[Your bio — where you're from, how you got into performing, training, and what drives you as an artist.]</p>
+                    <p class="placeholder">[A second paragraph — recent credits, notable roles, commercials, or what you're working on now.]</p>
+                </div>
+                <div class="placeholder-image">Your photo here</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="resume" class="section">
+        <div class="container">
+            <h2>Resume</h2>
+            <div class="resume-actions">
+                <a href="#" class="btn placeholder">[Download Resume]</a>
+                <a href="#" class="btn placeholder" style="background:var(--brand-color);">[Download Headshot]</a>
+            </div>
+            <div class="placeholder-image media-embed" style="min-height:200px;">Your resume preview or PDF embed here</div>
+            <div class="resume-links">
+                <a href="#" class="placeholder">[Actors Access Profile]</a>
+                <a href="#" class="placeholder">[IMDB Profile]</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="media" class="section">
+        <div class="container">
+            <h2>Media</h2>
+            <div class="placeholder-image media-embed">Your reel or video embed here</div>
+        </div>
+    </section>
+
+    <section id="headshots" class="section">
+        <div class="container">
+            <h2>Headshots</h2>
+            <div class="photo-grid">
+                <div class="placeholder-image">Headshot 1</div>
+                <div class="placeholder-image">Headshot 2</div>
+                <div class="placeholder-image">Headshot 3</div>
+                <div class="placeholder-image">Headshot 4</div>
+                <div class="placeholder-image">Headshot 5</div>
+                <div class="placeholder-image">Headshot 6</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="section">
+        <div class="container">
+            <h2>Gallery</h2>
+            <div class="photo-grid gallery-grid">
+                <div class="placeholder-image">Production still</div>
+                <div class="placeholder-image">Production still</div>
+                <div class="placeholder-image">Production still</div>
+                <div class="placeholder-image">Production still</div>
+                <div class="placeholder-image">Production still</div>
+                <div class="placeholder-image">Production still</div>
+                <div class="placeholder-image">Production still</div>
+                <div class="placeholder-image">Production still</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact</h2>
+            <p class="placeholder" style="text-align:center;margin-bottom:1rem;"><strong>Email:</strong> [your@email.com]</p>
+
+            <h3 style="text-align:center;color:var(--brand-color);font-family:var(--font-heading);margin-bottom:0.5rem;">Representation</h3>
+            <div class="rep-grid">
+                <div class="rep-card">
+                    <h4 class="placeholder">[Agency Name]</h4>
+                    <p class="placeholder">[City, State]</p>
+                    <p class="placeholder">[Phone Number]</p>
+                    <p class="placeholder">[agent@agency.com]</p>
+                </div>
+                <div class="rep-card">
+                    <h4 class="placeholder">[Agency Name]</h4>
+                    <p class="placeholder">[City, State]</p>
+                    <p class="placeholder">[Phone Number]</p>
+                    <p class="placeholder">[agent@agency.com]</p>
+                </div>
+            </div>
+
+            <h3 style="text-align:center;color:var(--brand-color);font-family:var(--font-heading);margin-top:2rem;">Stay Connected</h3>
+            <p class="placeholder" style="text-align:center;margin-bottom:0.75rem;">[Subscribe for updates on new projects and appearances.]</p>
+            <div class="newsletter-signup">
+                <input type="email" placeholder="[your@email.com]" aria-label="Email address">
+                <button type="button">Subscribe</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <p class="placeholder">&copy; [Your Name] · Actor</p>
+        <p class="template-note">Template by NextGen Sites — your version won't say this</p>
+    </footer>
+</body>
+</html>
