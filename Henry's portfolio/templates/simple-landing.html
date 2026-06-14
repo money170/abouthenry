@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Headline] — Simple Landing Template</title>
+    <link rel="stylesheet" href="template-base.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .landing-hero {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 3rem 1.25rem;
+            background: linear-gradient(135deg, var(--brand-color) 0%, #312e81 100%);
+            color: #fff;
+        }
+        .landing-hero h1 {
+            color: #fff;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .landing-hero p {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.15rem;
+            max-width: 520px;
+            margin: 0 auto 2rem;
+        }
+        .email-signup {
+            display: flex;
+            gap: 0.5rem;
+            max-width: 420px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .email-signup input {
+            flex: 1;
+            min-width: 200px;
+            padding: 0.75rem 1rem;
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+        }
+        .email-signup button {
+            padding: 0.75rem 1.5rem;
+            background: var(--accent-color);
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        .landing-footer {
+            background: #111827;
+            color: rgba(255, 255, 255, 0.7);
+            text-align: center;
+            padding: 1.25rem;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+    <section class="landing-hero">
+        <div class="container">
+            <div class="placeholder-image" style="width:80px;height:80px;min-height:80px;border-radius:50%;margin:0 auto 1.5rem;font-size:0.75rem;">Logo</div>
+            <h1 class="placeholder">[Your Headline]</h1>
+            <p class="placeholder">[Short description — what you offer and why people should care. Keep it to 1–2 sentences.]</p>
+            <div class="email-signup">
+                <input type="email" placeholder="[your@email.com]" aria-label="Email address">
+                <button type="button">Notify Me</button>
+            </div>
+            <p class="placeholder" style="margin-top:1.5rem;font-size:0.9rem;opacity:0.8;">[Optional: Launching soon in Your City]</p>
+        </div>
+    </section>
+
+    <footer class="landing-footer">
+        <p class="placeholder">[Business Name] · [Contact Email]</p>
+        <p class="template-note">Template by NextGen Sites — your version won't say this</p>
+    </footer>
+</body>
+</html>
