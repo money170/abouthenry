@@ -120,7 +120,7 @@ function validateForm() {
     const form = document.getElementById('contactForm');
     if (!form) return false;
 
-    const inputs = form.querySelectorAll('input, textarea');
+    const inputs = form.querySelectorAll('input, textarea, select');
     let isValid = true;
     
     inputs.forEach(input => {
@@ -312,7 +312,7 @@ if (contactForm) {
                 showNotification('Thank you for your message! I\'ll get back to you soon.', 'success');
                 form.reset();
 
-                form.querySelectorAll('label').forEach(label => {
+                form.querySelectorAll('.form-group:not(.form-group--select) label').forEach(label => {
                     label.style.top = '1rem';
                     label.style.fontSize = '1rem';
                     label.style.color = 'var(--gray-600)';
@@ -358,8 +358,10 @@ function showNotification(message, type = 'info') {
     });
 }
 
-document.querySelectorAll('.form-group input, .form-group textarea').forEach(field => {
+document.querySelectorAll('.form-group input, .form-group textarea, .form-group select').forEach(field => {
     field.addEventListener('focus', function() {
+        if (this.closest('.form-group--select')) return;
+
         const label = this.nextElementSibling;
         if (label && label.tagName === 'LABEL') {
             label.style.top = '-0.5rem';
@@ -371,6 +373,8 @@ document.querySelectorAll('.form-group input, .form-group textarea').forEach(fie
     });
     
     field.addEventListener('blur', function() {
+        if (this.closest('.form-group--select')) return;
+
         const label = this.nextElementSibling;
         if (label && label.tagName === 'LABEL' && !this.value) {
             label.style.top = '1rem';

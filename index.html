@@ -403,8 +403,15 @@
                             <div id="email-error" class="error-message" role="alert" aria-live="polite"></div>
                         </div>
 
-                        <div class="form-group">
-                            <input type="text" id="template" name="template" aria-describedby="template-error" placeholder=" ">
+                        <div class="form-group form-group--select">
+                            <select id="template" name="template" aria-describedby="template-error">
+                                <option value="" selected disabled>Select a template</option>
+                                <option value="Local Business">Local Business</option>
+                                <option value="Service Pro">Service Pro</option>
+                                <option value="Simple Landing">Simple Landing</option>
+                                <option value="Actor Portfolio">Actor Portfolio</option>
+                                <option value="Not sure yet">Not sure yet</option>
+                            </select>
                             <label for="template">Template You Like</label>
                             <div id="template-error" class="error-message" role="alert" aria-live="polite"></div>
                         </div>
