@@ -668,6 +668,175 @@ section {
     justify-content: center;
 }
 
+/* How It Works Section */
+.how-it-works {
+    background: var(--white);
+    padding: 5rem 0;
+}
+
+[data-theme="dark"] .how-it-works {
+    background: var(--gray-50);
+}
+
+.steps-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1.5rem;
+    counter-reset: step;
+}
+
+.step-item {
+    position: relative;
+    background: var(--white);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    padding: 2rem 1.25rem 1.5rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+[data-theme="dark"] .step-item {
+    background: var(--gray-100);
+}
+
+.step-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.step-item:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 2.75rem;
+    right: -0.85rem;
+    width: 1.5rem;
+    height: 2px;
+    background: var(--secondary);
+    opacity: 0.5;
+}
+
+.step-number {
+    position: absolute;
+    top: -0.75rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1.75rem;
+    height: 1.75rem;
+    background: var(--secondary);
+    color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.step-icon {
+    width: 3rem;
+    height: 3rem;
+    margin: 0.75rem auto 1rem;
+    background: rgba(6, 182, 212, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--secondary);
+    font-size: 1.25rem;
+}
+
+.step-item h3 {
+    color: var(--primary);
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+@media (min-width: 1100px) {
+    .steps-list {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+@media (max-width: 1099px) {
+    .step-item:not(:last-child)::after {
+        display: none;
+    }
+}
+
+/* Pricing Section */
+.pricing {
+    background: var(--gray-100);
+    padding: 5rem 0;
+}
+
+[data-theme="dark"] .pricing {
+    background: var(--gray-100);
+}
+
+.pricing-content {
+    max-width: 720px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.pricing-intro {
+    color: var(--gray-600);
+    font-size: 1.15rem;
+    line-height: 1.7;
+    margin-bottom: 2.5rem;
+}
+
+.pricing-highlights {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.pricing-card {
+    background: var(--white);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    padding: 2rem 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+[data-theme="dark"] .pricing-card {
+    background: var(--gray-50);
+}
+
+.pricing-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.pricing-amount {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 0.75rem;
+    line-height: 1;
+}
+
+.pricing-card p {
+    color: var(--gray-600);
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+.pricing-note {
+    color: var(--gray-600);
+    font-size: 1.05rem;
+    margin-bottom: 1.5rem;
+}
+
+.pricing-cta {
+    display: inline-flex;
+}
+
 .image-placeholder {
     width: 200px;
     height: 200px;
@@ -1924,6 +2093,16 @@ section {
 
     .templates-grid {
         grid-template-columns: 1fr;
+    }
+
+    .steps-list {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .step-item:not(:last-child)::after {
+        display: none;
     }
 
     .projects-grid {
