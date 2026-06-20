@@ -1035,6 +1035,18 @@ section {
     background: rgba(254, 243, 199, 0.45);
 }
 
+.portfolio-mock--lawn {
+    background: linear-gradient(160deg, #14532D 0%, #166534 50%, #15803D 100%);
+}
+
+.portfolio-mock--lawn .portfolio-mock-name {
+    color: #D9F99D;
+}
+
+.portfolio-mock--lawn .portfolio-mock-line {
+    background: rgba(217, 249, 157, 0.45);
+}
+
 .portfolio-mock-blocks {
     display: flex;
     gap: 0.4rem;

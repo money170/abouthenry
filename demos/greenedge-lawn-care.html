@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenEdge Lawn Care — Cedar Falls, IA</title>
+    <meta name="description" content="GreenEdge Lawn Care offers mowing, edging, and seasonal cleanup for homes in Cedar Falls and surrounding neighborhoods.">
+    <link rel="stylesheet" href="../templates/template-base.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --brand-color: #14532D;
+            --accent-color: #84CC16;
+            --font-heading: 'Georgia', serif;
+        }
+
+        .hero {
+            background: linear-gradient(180deg, #F7FEE7 0%, #fff 100%);
+        }
+
+        .pricing-card { text-align: center; }
+        .pricing-card .price {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: var(--accent-color);
+            margin: 0.5rem 0;
+        }
+
+        .testimonial {
+            background: #fff;
+            border-left: 4px solid var(--accent-color);
+            padding: 1.25rem;
+            margin-bottom: 1rem;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .service-icon {
+            font-size: 2rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: rgba(132, 204, 22, 0.15);
+            color: #3F6212;
+            font-size: 0.85rem;
+            font-weight: 600;
+            padding: 0.35rem 0.75rem;
+            border-radius: 999px;
+            margin-bottom: 1rem;
+        }
+
+        .demo-banner {
+            background: #ECFCCB;
+            color: #365314;
+            text-align: center;
+            padding: 0.5rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <div class="demo-banner">Demo website by NextGen Sites — sample project, not a real business</div>
+
+    <header class="site-header">
+        <div class="container">
+            <div class="site-logo">GreenEdge Lawn Care</div>
+            <nav>
+                <ul class="site-nav">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <span class="hero-badge">Serving Cedar Falls &amp; nearby neighborhoods</span>
+            <h1>A sharper lawn, every visit</h1>
+            <p>Reliable mowing, clean edging, and seasonal yard care for homeowners who want curb appeal without the weekend work.</p>
+            <a href="#contact" class="btn">Get a Free Estimate</a>
+        </div>
+    </section>
+
+    <section id="services" class="section">
+        <div class="container">
+            <h2>Services &amp; Pricing</h2>
+            <div class="card-grid">
+                <div class="card pricing-card">
+                    <div class="service-icon" aria-hidden="true">🌿</div>
+                    <h3>Weekly Mow</h3>
+                    <p class="price">$35</p>
+                    <p>Mow, edge, and blow clippings — billed per visit for lawns up to a quarter acre.</p>
+                </div>
+                <div class="card pricing-card">
+                    <div class="service-icon" aria-hidden="true">🍂</div>
+                    <h3>Fall Cleanup</h3>
+                    <p class="price">$95</p>
+                    <p>Leaf removal, bed cleanup, and final mow to get your yard ready for winter.</p>
+                </div>
+                <div class="card pricing-card">
+                    <div class="service-icon" aria-hidden="true">✂️</div>
+                    <h3>Trim &amp; Shape</h3>
+                    <p class="price">$55</p>
+                    <p>Hedge trimming, bush shaping, and detail work along walkways and beds.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="section">
+        <div class="container">
+            <h2>What Homeowners Say</h2>
+            <div class="testimonial">
+                <p>"Our lawn has never looked this good. They're on time every week and leave the driveway cleaner than they found it."</p>
+                <p style="margin-top:0.5rem;font-weight:600;">— Mike T.</p>
+            </div>
+            <div class="testimonial">
+                <p>"We switched from a big franchise to GreenEdge and actually get to talk to the person mowing our yard. Huge difference."</p>
+                <p style="margin-top:0.5rem;font-weight:600;">— Linda &amp; Robert H.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <div class="contact-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:start;">
+                <div>
+                    <p style="margin-bottom:0.75rem;"><strong>Phone:</strong> (319) 555-0176</p>
+                    <p style="margin-bottom:0.75rem;"><strong>Email:</strong> hello@greenedge.example</p>
+                    <p style="margin-bottom:0.75rem;"><strong>Hours:</strong> Mon–Sat, 7am–6pm</p>
+                    <p style="margin-bottom:0.75rem;"><strong>Service area:</strong> Cedar Falls, Waterloo, Hudson</p>
+                    <div class="placeholder-image" style="margin-top:1rem;min-height:140px;background:linear-gradient(135deg,#F7FEE7,#D9F99D);border-color:#A3E635;color:#14532D;">Freshly mowed lawn</div>
+                </div>
+                <div class="contact-form" style="margin:0;">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="you@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Property address</label>
+                        <input type="text" id="address" placeholder="Street, city">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="4" placeholder="Lawn size, services needed, preferred schedule"></textarea>
+                    </div>
+                    <button type="button" class="btn" style="width:100%;border:none;cursor:pointer;">Request Estimate</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <p>&copy; GreenEdge Lawn Care · Cedar Falls, IA</p>
+        <p class="template-note">Demo site by NextGen Sites</p>
+    </footer>
+</body>
+</html>
