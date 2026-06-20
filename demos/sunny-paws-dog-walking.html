@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunny Paws Dog Walking — Maple Grove, MN</title>
+    <meta name="description" content="Sunny Paws Dog Walking offers reliable walks, puppy visits, and pet care in Maple Grove. Book a walk today.">
+    <link rel="stylesheet" href="../templates/template-base.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --brand-color: #065F46;
+            --accent-color: #F59E0B;
+            --font-heading: 'Georgia', serif;
+        }
+
+        .hero {
+            background: linear-gradient(180deg, #ECFDF5 0%, #fff 100%);
+        }
+
+        .site-logo::before {
+            content: '🐾 ';
+        }
+
+        .pricing-card { text-align: center; }
+        .pricing-card .price {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: var(--accent-color);
+            margin: 0.5rem 0;
+        }
+
+        .testimonial {
+            background: #fff;
+            border-left: 4px solid var(--accent-color);
+            padding: 1.25rem;
+            margin-bottom: 1rem;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .service-icon {
+            font-size: 2rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: rgba(245, 158, 11, 0.15);
+            color: #92400E;
+            font-size: 0.85rem;
+            font-weight: 600;
+            padding: 0.35rem 0.75rem;
+            border-radius: 999px;
+            margin-bottom: 1rem;
+        }
+
+        .demo-banner {
+            background: #FEF3C7;
+            color: #92400E;
+            text-align: center;
+            padding: 0.5rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <div class="demo-banner">Demo website by NextGen Sites — sample project, not a real business</div>
+
+    <header class="site-header">
+        <div class="container">
+            <div class="site-logo">Sunny Paws</div>
+            <nav>
+                <ul class="site-nav">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <span class="hero-badge">Serving Maple Grove &amp; surrounding areas</span>
+            <h1>Happy dogs, reliable walks</h1>
+            <p>Professional dog walking and puppy visits for busy pet parents. Insured, bonded, and obsessed with tail wags.</p>
+            <a href="#contact" class="btn">Book a Walk</a>
+        </div>
+    </section>
+
+    <section id="services" class="section">
+        <div class="container">
+            <h2>Services &amp; Pricing</h2>
+            <div class="card-grid">
+                <div class="card pricing-card">
+                    <div class="service-icon" aria-hidden="true">🦮</div>
+                    <h3>Standard Walk</h3>
+                    <p class="price">$18</p>
+                    <p>30-minute neighborhood walk with fresh water, photo update, and a tired, happy pup.</p>
+                </div>
+                <div class="card pricing-card">
+                    <div class="service-icon" aria-hidden="true">📅</div>
+                    <h3>Weekly Pack</h3>
+                    <p class="price">$80</p>
+                    <p>Five walks Monday–Friday. Perfect for work-from-office days and consistent exercise.</p>
+                </div>
+                <div class="card pricing-card">
+                    <div class="service-icon" aria-hidden="true">🐶</div>
+                    <h3>Puppy Visit</h3>
+                    <p class="price">$15</p>
+                    <p>20-minute potty break, playtime, and feeding for puppies still learning the ropes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="section">
+        <div class="container">
+            <h2>What Pet Parents Say</h2>
+            <div class="testimonial">
+                <p>"Our golden retriever Max gets so excited when he sees the Sunny Paws leash. Reliable, friendly, and always sends photos."</p>
+                <p style="margin-top:0.5rem;font-weight:600;">— Sarah M.</p>
+            </div>
+            <div class="testimonial">
+                <p>"We travel for work a lot. Knowing someone trustworthy is checking on our two beagles makes all the difference."</p>
+                <p style="margin-top:0.5rem;font-weight:600;">— James &amp; Priya K.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <div class="contact-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:start;">
+                <div>
+                    <p style="margin-bottom:0.75rem;"><strong>Phone:</strong> (612) 555-0142</p>
+                    <p style="margin-bottom:0.75rem;"><strong>Email:</strong> hello@sunnypaws.example</p>
+                    <p style="margin-bottom:0.75rem;"><strong>Hours:</strong> Mon–Sat, 7am–7pm</p>
+                    <p style="margin-bottom:0.75rem;"><strong>Service area:</strong> Maple Grove, Plymouth, Osseo</p>
+                    <div class="placeholder-image" style="margin-top:1rem;min-height:140px;background:linear-gradient(135deg,#ECFDF5,#D1FAE5);border-color:#6EE7B7;color:#065F46;">Dog on a sunny trail</div>
+                </div>
+                <div class="contact-form" style="margin:0;">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="you@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="pet">Dog's name &amp; breed</label>
+                        <input type="text" id="pet" placeholder="e.g. Luna, Labrador mix">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="4" placeholder="Tell us about your pup and preferred schedule"></textarea>
+                    </div>
+                    <button type="button" class="btn" style="width:100%;border:none;cursor:pointer;">Send Message</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <p>&copy; Sunny Paws Dog Walking · Maple Grove, MN</p>
+        <p class="template-note">Demo site by NextGen Sites</p>
+    </footer>
+</body>
+</html>

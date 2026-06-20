@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lakeside Pizza — Wood-Fired Pizza by the Water</title>
+    <meta name="description" content="Lakeside Pizza serves wood-fired pies, fresh salads, and local craft beer on the shores of Lake Meredith.">
+    <link rel="stylesheet" href="../templates/template-base.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --brand-color: #991B1B;
+            --accent-color: #CA8A04;
+            --font-heading: 'Georgia', serif;
+        }
+
+        .hero {
+            background: linear-gradient(180deg, #FEF2F2 0%, #fff 100%);
+        }
+
+        .menu-card .price-tag {
+            display: inline-block;
+            background: var(--accent-color);
+            color: #fff;
+            font-weight: 700;
+            padding: 0.25rem 0.65rem;
+            border-radius: 4px;
+            font-size: 0.95rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .menu-card .placeholder-image {
+            min-height: 100px;
+            margin-bottom: 1rem;
+            font-size: 2rem;
+            background: linear-gradient(135deg, #FEE2E2, #FEF3C7);
+            border-color: #FCA5A5;
+            color: #991B1B;
+        }
+
+        .hours-list {
+            list-style: none;
+            margin-top: 1rem;
+        }
+
+        .hours-list li {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.35rem 0;
+            border-bottom: 1px solid #E5E7EB;
+            color: #4B5563;
+        }
+
+        .demo-banner {
+            background: #FEE2E2;
+            color: #991B1B;
+            text-align: center;
+            padding: 0.5rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <div class="demo-banner">Demo website by NextGen Sites — sample project, not a real restaurant</div>
+
+    <header class="site-header">
+        <div class="container">
+            <div class="site-logo">Lakeside Pizza</div>
+            <nav>
+                <ul class="site-nav">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Wood-fired pizza by the lake</h1>
+            <p>Hand-stretched dough, local ingredients, and a patio with the best sunset views on Lake Meredith.</p>
+            <a href="#contact" class="btn">Order Pickup</a>
+        </div>
+    </section>
+
+    <section id="menu" class="section">
+        <div class="container">
+            <h2>Our Menu</h2>
+            <div class="card-grid">
+                <div class="card menu-card">
+                    <div class="placeholder-image" aria-hidden="true">🍕</div>
+                    <span class="price-tag">$14</span>
+                    <h3>Margherita</h3>
+                    <p>San Marzano tomatoes, fresh mozzarella, basil, and olive oil on our signature crust.</p>
+                </div>
+                <div class="card menu-card">
+                    <div class="placeholder-image" aria-hidden="true">🍕</div>
+                    <span class="price-tag">$16</span>
+                    <h3>Pepperoni Classic</h3>
+                    <p>Spicy cup pepperoni, mozzarella, and our house red sauce — a crowd favorite since day one.</p>
+                </div>
+                <div class="card menu-card">
+                    <div class="placeholder-image" aria-hidden="true">🥗</div>
+                    <span class="price-tag">$12</span>
+                    <h3>Lakeside Veggie</h3>
+                    <p>Roasted peppers, mushrooms, red onion, spinach, and goat cheese on a garlic white base.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Us</h2>
+            <div class="about-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:center;">
+                <div class="placeholder-image" style="min-height:220px;background:linear-gradient(135deg,#FEE2E2,#FEF3C7);border-color:#FCA5A5;color:#991B1B;">Patio overlooking the lake</div>
+                <div>
+                    <p style="margin-bottom:1rem;">Lakeside Pizza opened in 2018 when the Rossi family converted a lakeside bait shop into a cozy pizzeria. Every pie is fired in our brick oven at 900°F and served on the dock when weather allows.</p>
+                    <p style="margin-bottom:1rem;"><strong>Location:</strong> 42 Harbor Drive, Lake Meredith, WI</p>
+                    <ul class="hours-list">
+                        <li><span>Mon–Thu</span><span>11am – 9pm</span></li>
+                        <li><span>Fri–Sat</span><span>11am – 10pm</span></li>
+                        <li><span>Sunday</span><span>12pm – 8pm</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-form">
+                <p style="text-align:center;margin-bottom:1.5rem;">(715) 555-0198 · orders@lakesidepizza.example · Lake Meredith, WI</p>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="you@email.com">
+                </div>
+                <div class="form-group">
+                    <label for="message">Order or question</label>
+                    <textarea id="message" rows="4" placeholder="Pickup time, party size, or catering inquiry"></textarea>
+                </div>
+                <button type="button" class="btn" style="width:100%;border:none;cursor:pointer;">Send Message</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <p>&copy; Lakeside Pizza · Lake Meredith, WI</p>
+        <p class="template-note">Demo site by NextGen Sites</p>
+    </footer>
+</body>
+</html>
